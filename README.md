@@ -25,6 +25,8 @@ See [demo.frag](demo.frag) for an implementation of a vignette blur.
 
 The effect was inspired by David Hoskins' [ShaderToy](https://www.shadertoy.com/view/XdjSRw).
 
+**Note:** Use `highp` precision for best results on mobile and other low-end devices.
+
 ## Demos
 
 - [applied to a texture](http://stack.gl/glsl-hash-blur/) 
