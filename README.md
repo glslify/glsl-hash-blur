@@ -2,7 +2,7 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-![grain](http://i.imgur.com/uTGaC5t.jpg?1)
+[![grain](http://i.imgur.com/uTGaC5t.jpg?1)](http://stack.gl/glsl-hash-blur/)
 
 A fast blur effect that uses a random hash to compute the sample offset. This gives a snowy/grainy feel to the blur. When requiring, you must specify a `sample` function and the `iterations` (a `const` or `#define` integer).
 
@@ -25,9 +25,11 @@ See [demo.frag](demo.frag) for an implementation of a vignette blur.
 
 The effect was inspired by David Hoskins' [ShaderToy](https://www.shadertoy.com/view/XdjSRw).
 
+**Note:** Use `highp` precision for best results on mobile and other low-end devices.
+
 ## Demos
 
-- [applied to a texture]() 
+- [applied to a texture](http://stack.gl/glsl-hash-blur/) 
 - [editable glslbin demo](http://glslb.in/s/c1a93844)
 
 ## Usage
