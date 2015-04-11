@@ -1,16 +1,10 @@
-// https://www.shadertoy.com/view/XdjSRw
-// Hashed blur
-// David Hoskins.
-// License Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License.
+#pragma glslify: random = require('glsl-random')
 
 #ifndef TAU
   #define TAU 6.28318530718
 #endif
 
-
-#pragma glslify: random = require('glsl-random')
-
-// Use last part of hash function to generate new random radius and angle...
+//Use last part of hash function to generate new random radius and angle
 vec2 mult(inout vec2 r) {
   r = fract(r * vec2(12.9898,78.233));
   return sqrt(r.x + .001) * vec2(sin(r.y * TAU), cos(r.y * TAU));
@@ -28,8 +22,12 @@ vec3 blur(vec2 uv, float radius, float aspect, float offset) {
   return acc / float(iterations);
 }
 
-// vec3 blur(vec2 uv, vec2 resolution, float radius) {
-//   return blur(uv, resolution, radius, 0.0);
-// }
+vec3 blur(vec2 uv, float radius, float aspect) {
+  return blur(uv, radius, aspect, 0.0);
+}
+
+vec3 blur(vec2 uv, float radius) {
+  return blur(uv, radius, 1.0);
+}
 
 #pragma glslify: export(blur)

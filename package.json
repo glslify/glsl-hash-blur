@@ -1,0 +1,55 @@
+{
+  "name": "glsl-hash-blur",
+  "version": "1.0.0",
+  "description": "a blur effect based on random hash offset",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "glsl-random": "0.0.5"
+  },
+  "devDependencies": {
+    "a-big-triangle": "^1.0.0",
+    "baboon-image": "^1.0.0",
+    "browserify": "^9.0.8",
+    "budo": "^3.0.0-rc3",
+    "garnish": "^2.1.2",
+    "gl-shader": "^4.0.1",
+    "gl-texture2d": "^2.0.8",
+    "glslify": "^2.1.1",
+    "raf-loop": "^1.0.1",
+    "uglifyjs": "^2.4.10",
+    "watchify": "^3.1.0",
+    "webgl-context": "^2.1.2"
+  },
+  "scripts": {
+    "start": "budo demo.js --live -v -t glslify | garnish"
+  },
+  "keywords": [
+    "hash",
+    "blur",
+    "blurred",
+    "blurs",
+    "blurring",
+    "glsl",
+    "glslify",
+    "glslbin",
+    "stackgl",
+    "hashed",
+    "random",
+    "gaussian",
+    "sparkle"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/glsl-hash-blur.git"
+  },
+  "homepage": "https://github.com/mattdesl/glsl-hash-blur",
+  "bugs": {
+    "url": "https://github.com/mattdesl/glsl-hash-blur/issues"
+  }
+}
