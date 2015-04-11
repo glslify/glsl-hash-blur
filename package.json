@@ -27,7 +27,8 @@
     "webgl-context": "^2.1.2"
   },
   "scripts": {
-    "start": "budo demo.js:bundle.js --live -v -t glslify | garnish"
+    "start": "budo demo.js:bundle.js --live -v -t glslify | garnish",
+    "build": "browserify demo.js | uglifyjs -cm > bundle.js"
   },
   "keywords": [
     "hash",
