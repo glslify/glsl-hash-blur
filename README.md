@@ -52,6 +52,30 @@ The `aspect` (defaults to 1.0) is recommended to produce a more accurate blur; e
 
 The `offset` is optional (defaults to 0.0). It offsets the uvs during randomization, which can produce a "jitter" effect like moving film noise. 
 
+## Running From Source
+
+To build/run the demo from source: 
+
+```sh
+git clone https://github.com/stackgl/glsl-hash-blur.git
+cd glsl-hash-blur
+npm install
+```
+
+Then run the following to start development:
+
+```sh
+npm run start
+```
+
+And open [http://localhost:9966/](). Changes to the file will trigger a LiveReload event on the page.
+
+To run the production build:
+
+```sh
+npm run build
+```
+
 ## License
 
 MIT, see [LICENSE.md](http://github.com/mattdesl/glsl-hash-blur/blob/master/LICENSE.md) for details.
