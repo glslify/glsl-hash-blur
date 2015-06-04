@@ -47,10 +47,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/glsl-hash-blur.git"
+    "url": "git://github.com/stackgl/glsl-hash-blur.git"
   },
-  "homepage": "https://github.com/mattdesl/glsl-hash-blur",
+  "homepage": "https://github.com/stackgl/glsl-hash-blur",
   "bugs": {
-    "url": "https://github.com/mattdesl/glsl-hash-blur/issues"
+    "url": "https://github.com/stackgl/glsl-hash-blur/issues"
   }
 }

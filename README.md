@@ -78,4 +78,4 @@ npm run build
 
 ## License
 
-MIT, see [LICENSE.md](http://github.com/mattdesl/glsl-hash-blur/blob/master/LICENSE.md) for details.
+MIT, see [LICENSE.md](http://github.com/stackgl/glsl-hash-blur/blob/master/LICENSE.md) for details.
