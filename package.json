@@ -1,6 +1,6 @@
 {
   "name": "glsl-hash-blur",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a blur effect based on random hash offset",
   "main": "index.js",
   "license": "MIT",
